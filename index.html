@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modeling & Casting</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <!-- Font Awesome Icon Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap Link CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<style>
+    /* Active color for navbar */
+    .navbar-nav .nav-item.active .nav-link {
+        color: #9d1c36 !important;
+        background-color: red !important;
+    }
+
+    /* Hover color for navbar */
+    .navbar-nav .nav-item:hover .nav-link {
+        color: #9d1c36 !important;
+    }
+
+    /* Search Box Icon Here Navbar */
+    .search-container {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #010103af;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .search-box {
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .fa-search {
+        cursor: pointer;
+    }
+
+    /* Home Section Background */
+    .banner {
+        background-image: url('./assets/img/Background.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+       background-attachment:fixed ;
+    }
+</style>
+
+
+<body>
+    <!-- Navbar Section Here -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top p-3" style="background-color: black !important;">
+        <div class="container">
+            <img src="assets/img/castyou-logo.jpg" alt="" width="20%" style="margin-right: 10%;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="  font-family: robot;
+                font-size: 14px;">
+                    <li class="nav-item ms-2">
+                        <a class="nav-link active text-light" aria-current="page" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link active text-light" aria-current="page" href="#">ACTORS</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link active text-light" aria-current="page" href="#">MODLES</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link active text-light" aria-current="page" href="#">CHILD ARTISTS</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link active text-light" aria-current="page" href="#">AUDITIONS</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link active text-light" aria-current="page" href="#">SIGN UP</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link active text-light" aria-current="page" href="#">MY SHORTLIST</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <i class="fa fa-search text-light" style="font-size:28px;" onclick="openSearchBox()"></i>
+                </form>
+                <div class="search-container" id="searchContainer">
+                    <div class="search-box">
+                        <!-- Your expanded search box content goes here -->
+                        <input type="text" placeholder="Search...">
+                        <button onclick="closeSearchBox()">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Banner -->
+    <div class="d-flex align-items-center justify-content-center vh-100 banner">
+        <div class="container-fluid text-center text-light">
+            <h1 style="font-family: Montserrat ; font-size: 35px;">WHERE TALENT MEETS OPPORTUNITY</h1>
+            <button type="button" class="btn text-light p-2 ms-3 border-0 m-2"
+                style="background-color:#ab193f; font-family: Montserrat; font-size: 18px; padding-left:1% !important; padding-right:1% !important;">SIGN
+                UP FOR FREE</button>
+            <button type="button" class="btn text-light p-2 ms-3 border-0 m-2"
+                style="background-color:#ab193f; font-family: Montserrat; font-size: 18px;  padding-left:1% !important; padding-right:1% !important; ">HIRE
+                ACTORS / MODELS FROM US</button>
+        </div>
+    </div>
+
+    <!-- What Is Cast You? Here -->
+    <div class="container-fluid pt-5" style="background-color: #000000;">
+     <div class="container text-light text-center" >
+        <h2 style="font-family: Montserrat ; font-size: 35px;">WHAT IS CAST YOU?</h2>
+        <p style="font-family: Poppins ; font-size: 16px;">
+            CastYou is India’s First Digital Casting Agency that consists of Actors and Models across India. We offer free Sign Up to aspiring Actors and Models, and help them connect with Modelling Agencies and Casting Directors all over the Industry.
+        </p>
+        <p style="font-family: Poppins ; font-size: 16px; margin-top: 2%;">
+            We don’t charge any Registration Fee nor do we take any Commission from our Actors & Models on board. We give out Free Audition Updates on a daily basis once your profile is ready with us.
+        </p>
+        <p style="font-family: Poppins ; font-size: 16px; margin-top: 2%;">
+            We bring together a whole team of photographers, studios, make-up artists, talent managers, production house tie-ups under one roof. We ensure modelling jobs for children, teens and adults
+        </p>
+
+     </div>
+    </cdiv>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Search Box Here Code -->
+    <script>
+        function openSearchBox() {
+            document.getElementById("searchContainer").style.display = "flex";
+        }
+
+        function closeSearchBox() {
+            document.getElementById("searchContainer").style.display = "none";
+        }
+    </script>
+
+
+
+
+    <!-- Bootstrap JS Link CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
