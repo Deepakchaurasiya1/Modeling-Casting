@@ -11,168 +11,14 @@
     <!-- Bootstrap Link CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- Demo -->
+    <!-- Cutome CSS Add -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Sponser Slider CDN -->
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <!-- Member Card JS CDN-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 </head>
-
-<style>
-    /* Active color for navbar */
-    .navbar-nav .nav-item.active .nav-link {
-        color: #9d1c36 !important;
-        background-color: red !important;
-    }
-
-    /* Hover color for navbar */
-    .navbar-nav .nav-item:hover .nav-link {
-        color: #9d1c36 !important;
-    }
-
-    /* Search Box Icon Here Navbar */
-    .search-container {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #010103af;
-        justify-content: center;
-        align-items: center;
-        z-index: 1000;
-    }
-
-    .search-box {
-        padding: 20px;
-        border-radius: 8px;
-    }
-
-    .fa-search {
-        cursor: pointer;
-    }
-
-    /* Home Section Background */
-    .banner {
-        background-image: url('./assets/img/Background.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-
-    /* Sponser Slider Our Partners Here Brand Logo */
-
-    .slick-slide {
-        margin: 0px 20px;
-    }
-
-    .slick-slide img {
-        width: 120px;
-    }
-
-    .slick-slider {
-        position: relative;
-        display: block;
-        box-sizing: border-box;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        -webkit-touch-callout: none;
-        -khtml-user-select: none;
-        -ms-touch-action: pan-y;
-        touch-action: pan-y;
-        -webkit-tap-highlight-color: transparent;
-    }
-
-    .slick-list {
-        position: relative;
-        display: block;
-        overflow: hidden;
-        margin: 0;
-        padding: 0;
-    }
-
-    .slick-list:focus {
-        outline: none;
-    }
-
-    .slick-list.dragging {
-        cursor: pointer;
-        cursor: hand;
-    }
-
-    .slick-slider .slick-track,
-    .slick-slider .slick-list {
-        -webkit-transform: translate3d(0, 0, 0);
-        -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-        -o-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-
-    .slick-track {
-        position: relative;
-        top: 0;
-        left: 0;
-        display: block;
-    }
-
-    .slick-track:before,
-    .slick-track:after {
-        display: table;
-        content: '';
-    }
-
-    .slick-track:after {
-        clear: both;
-    }
-
-    .slick-loading .slick-track {
-        visibility: hidden;
-    }
-
-    .slick-slide {
-        display: none;
-        float: left;
-        height: 100%;
-        min-height: 1px;
-    }
-
-    [dir='rtl'] .slick-slide {
-        float: right;
-    }
-
-    .slick-slide img {
-        display: block;
-    }
-
-    .slick-slide.slick-loading img {
-        display: none;
-    }
-
-    .slick-slide.dragging img {
-        pointer-events: none;
-    }
-
-    .slick-initialized .slick-slide {
-        display: block;
-    }
-
-    .slick-loading .slick-slide {
-        visibility: hidden;
-    }
-
-    .slick-vertical .slick-slide {
-        display: block;
-        height: auto;
-        border: 1px solid transparent;
-    }
-
-    .slick-arrow.slick-hidden {
-        display: none;
-    }
-</style>
 
 <body>
     <!-- Navbar Section Here -->
@@ -278,7 +124,7 @@
             </div>
         </div>
         <!-- Sponser Brand Logo Here Section -->
-        <div class="container">
+        <div class="container" style="padding-bottom: 5%;">
             <section class="customer-logos slider">
                 <div class="slide"><img src="assets/img/sponsor/myntra_logo.png"></div>
                 <div class="slide"><img src="assets/img/sponsor/TVS-logo.png"></div>
@@ -294,19 +140,84 @@
         </div>
     </div>
 
-    <!-- Demo Sponser Slider -->
+    <!-- Services Heading Start Here -->
+    <div class="container mt-5 align-items-center text-center">
+        <h2 style="font-size: 35px; line-height: 45px; font-weight: 700; font-family: Montserrat;">SERVICES</h2>
+        <p style="font-family: Poppins; font-weight: 500; line-height: 29px;"> We Open Doors For Bright Talent</p>
 
+    </div>
+
+    <!-- Sercvices Member Section Start Here -->   
+    <div class="container" style="background-color: #f7f9fb;">
+        <div class="main">
+            <div class="profile-card">
+                <div class="img">
+                    <img
+                        src="https://1.bp.blogspot.com/-8c7QTLoyajs/YLjr2V6KYRI/AAAAAAAACO8/ViVPQpLWVM0jGh3RZhh-Ha1-1r3Oj62wQCNcBGAsYHQ/s16000/team-1-3.jpg">
+                </div>
+                <div class="caption">
+                    <h3>Vin Diesel</h3>
+                    <p>Senior App Developer</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="img">
+                    <img
+                        src="https://1.bp.blogspot.com/-vhmWFWO2r8U/YLjr2A57toI/AAAAAAAACO4/0GBonlEZPmAiQW4uvkCTm5LvlJVd_-l_wCNcBGAsYHQ/s16000/team-1-2.jpg">
+                </div>
+                <div class="caption">
+                    <h3>David Corner</h3>
+                    <p>Front End Developer</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="img">
+                    <img
+                        src="assets/img/team/team-3.jpg">
+                </div>
+                <div class="caption">
+                    <h3>Tom Cruise</h3>
+                    <p>Full Stact Developer</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="img">
+                    <img
+                        src="https://1.bp.blogspot.com/-AO5j2Y9lzME/YLjr3mxiqAI/AAAAAAAACPE/KAaYYTtQTrgBE3diTbxGoc4U4fCGx-C2gCNcBGAsYHQ/s16000/team-1-4.jpg">
+                </div>
+                <div class="caption">
+                    <h3>Tom Cruise</h3>
+                    <p>Full Stact Developer</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <style>
-        /* For Webkit browsers (Chrome, Safari) */
-        ::-webkit-scrollbar {
-            width: 2px;
-        }
+        .deepak {
+            display: flex;
+            justify-content: space-around;
 
-        ::-webkit-scrollbar-thumb {
-            background-color: #9d1c36;      
         }
-
-      
     </style>
 
 
@@ -323,6 +234,29 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Side Slide Scroll Bar -->
+
+    <style>
+        /* For Webkit browsers (Chrome, Safari) */
+        ::-webkit-scrollbar {
+            width: 2px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #9d1c36;
+        }
+    </style>
 
 
 
