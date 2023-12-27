@@ -148,7 +148,7 @@
 
     <!-- Sercvices Member Section Start Here -->
     <div class="container-fluid" style="background-color: #f7f9fb;">
-        <div class="main">
+        <div class="main container">
             <div class="profile-card">
                 <div class="img">
                     <img src="assets/img/team/team-4.jpg">
@@ -292,16 +292,46 @@
             </button>
         </div>
     </div>
+ <!-- Down to Upper Side Button -->
+ <button onclick="scrollToTop()" id="scrollToTopBtn">&#8593;</button>
 
 
+<style>
+     /* Down to Upper Side Button */
+ #scrollToTopBtn {
+     display: none;
+     position: fixed;
+     bottom: 25px;
+     right: 25px;
+     background-color: #7d8dec;
+     color: #fff;
+     border: none;
+     border-radius: 5px;
+     font-size: 1.5em;
+     cursor: pointer;
+     height: 50px;
+     width: 50px;
+ }
+</style>
 
+<!-- Scroll Button Js Here -->
 
-
-
-
-
-
-
+<script>
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+ 
+ window.onscroll = function () {
+   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+     scrollToTopBtn.style.display = "block";
+   } else {
+     scrollToTopBtn.style.display = "none";
+   }
+ };
+ 
+ function scrollToTop() {
+   document.body.scrollTop = 0;
+   document.documentElement.scrollTop = 0;
+ }
+ </script>
 
 
 
@@ -330,7 +360,7 @@
     </style>
 
 
-
+ 
     <!-- Client JS -->
     <script>
         $(document).ready(function () {
